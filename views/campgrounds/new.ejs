@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate') %> 
+
+  
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow">
+            <div class="card-body">
+            <h1 class="text-center font-weight-bold p-3">New Campground</h1>
+        <form action="/campgrounds" method="POST" class="validated-form" enctype="multipart/form-data" novalidate> 
+            <div class="mb-3">
+                <label class="form-label" for="title">Name of Campground</label>
+                <input class="form-control" type="text" name="campground[title]" id="title" placeholder="Campground Name" required>
+                <div class="invalid-feedback">
+                    Please enter a name
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" name="campground[location]" id="location" placeholder="Location name" required>
+                <div class="invalid-feedback">
+                    Please enter a location
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="description">Enter description of the campground</label>
+                <textarea class="form-control" type="text" name="campground[description]" id="description" placeholder="Description" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a description
+                </div>
+            </div>
+            <div class="mb-3">       
+                <label class="form-label" for="price">Enter the nightly price</label>                       
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" id="price" name="campground[price]" placeholder="0.00" required>
+                    <div class="invalid-feedback">
+                        Please enter a price 
+                    </div>
+                </div>
+            </div>
+            <div class=" mb-3">
+                <label class="form-label" for="price">Photos of the campsite</label> 
+                <div class="input-group">
+                        <input type="file" class="form-control"  name="image" id="image" multiple>
+                        <div class="invalid-feedback">
+                            Please choose an Image
+                        </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">Create Camp</button>
+        </form>
+        <a href="/campgrounds/" class="mt-3 btn btn-secondary" >All Campgrounds</a>
+         </div>
+        </div>
+    </div>
