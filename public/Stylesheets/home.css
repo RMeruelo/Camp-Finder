@@ -1,27 +1,70 @@
+@font-face {
+    font-family:BerkshireSwash ;
+    src: url(/font/BerkshireSwash-Regular.ttf);
+}
+@font-face {
+    font-family:Raleway-Bold ;
+    src: url(/font/Raleway-Bold.ttf;)
+}
+@font-face {
+    font-family:Raleway-Light ;
+    src: url(/font/Raleway-Light.ttf);
+}
+
+
 body{
     height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),
     url(https://images.unsplash.com/photo-1621872315260-d29289474c0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80);
     background-size: cover;
     background-position: center;
     text-shadow: 0 0.5rem 0.1rem rgba(0,0,0,0.5);
-    box-shadow: 0 0 5rem rgba(0,0,0,0.5);
+    
 }
 .cover-container{
     max-width: 60vw;
 }
 
+main .container{
+    box-shadow: 0 0 5rem rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(5px);
+    height: 350px;
+
+}
+
+h1{
+    font-family: BerkshireSwash;
+    font-size: 100px;
+}
+
+
+p{
+    font-family: Raleway-Bold;
+}
+
+h2{
+    font-family:BerkshireSwash;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer p{
+    font-family: Raleway-Light;
+}
+
 .nav-link{
     padding:0.25rem 0;
     font-weight: 700;
-    color: rgb(255,255,255,0.5);
+    color: rgb(255,255,255,0.7);
     margin-left: 1rem;
     border-bottom: 0.25rem solid transparent;
+    font-family: Raleway-Bold;
 }
 
 .nav-link:hover{
-    color: rgba(255,255,255,0.5 );
-    border-bottom-color:rgba(255,255,255,0.5 );
+    color: rgba(255,255,255,0.9 );
+    border-bottom-color:rgba(255,255,255,0.9 );
 }
 
 .nav-link.active{
@@ -32,5 +75,11 @@ body{
 .btn-secondary, .btn-secondary:hover{
     color:#333;
     text-shadow: none;
+    font-family: Raleway-Bold;
+    box-shadow: 0 0 5rem rgba(20, 20, 20, 0.5);
+    
 }
+
+
+
 

@@ -1,12 +1,15 @@
 
 const mongoose = require('mongoose');
-const campground = require('../models/campground');
 const Campground = require('../models/campground');
 const cities = require('./cities');
 const{ places, descriptors} = require('./seedHelpers')
 
+const dbUrl ="mongodb+srv://RMeruelo:NXZjfqVWLjBgCJMJ@campfinder.xftjx.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp');
+mongoose.connect(dbUrl, {
+  useNewUrlParser    : true,
+  useUnifiedTopology : true
+});
 const db = mongoose.connection;
 db.on("error",console.error.bind(console,"Connection Error"));
 db.once("open",()=>{
@@ -19,11 +22,11 @@ const sample = array => array[Math.floor(Math.random() * array.length)];
 
 const seedDB = async () => {
     await Campground.deleteMany({});
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 150; i++) {
         const price = Math.floor(Math.random()*20)+10;
         const random1000 = Math.floor(Math.random() * 1000);
         const camp = new Campground({
-            author: '6259dc9093f50e1f75d1a943',
+            author: '62fbb576487b94d6dd9a5f74',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             geometry:{
               type:'Point',
@@ -47,7 +50,7 @@ const seedDB = async () => {
     }
 }
 
-
 seedDB().then(()=>{
     mongoose.connection.close()
 })
+

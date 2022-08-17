@@ -3,5 +3,4 @@
 
 This Project uses Javascript, Node, Express.JS, and MongoBD to build a website that allows users to upload/comment/rate campsites around the US.
 
-The project wont work for you as is you need to use a cloudinary id to connect to a data base then run the index.js file in the Seeds folder seed the project. 
-
+If you try to download and directly run this application on your computer it will not work without setting up the enviormental variables. 

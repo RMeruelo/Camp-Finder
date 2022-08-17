@@ -91,7 +91,6 @@ app.use(methodOverride('_method'))
 app.use(mongoSanitize())
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
-
 const secret = process.env.SECRET || 'Thisisntthebestsecret'
 
 const store = MongoStore.create({
@@ -133,14 +132,14 @@ passport.deserializeUser(User.deserializeUser())
 
 
 
-// connect to local database
+// connect to database
 mongoose.connect(dbUrl);
 const db = mongoose.connection;
 db.on("error",console.error.bind(console,"Connection Error"));
 db.once("open",()=>{
     console.log("Database connected");
 });
-
+ 
 
 app.use((req,res,next)=>{
   res.locals.currentUser = req.user
@@ -171,7 +170,7 @@ app.all('*',(req,res,next)=>{
    
 }) 
 
-
+ 
 const port = process.env.PORT ||3000
 app.listen( port,()=>{
     console.log( `Listening on ${port} `)
