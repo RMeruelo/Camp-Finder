@@ -47,11 +47,9 @@ h2{
 }
 footer{
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-footer p{
     font-family: Raleway-Light;
 }
+
 
 .nav-link{
     padding:0.25rem 0;
