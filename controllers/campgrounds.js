@@ -8,12 +8,12 @@ const geocoder = mbxGeocoding({accessToken: mapBoxToken})
 //shows all campgrounds
 module.exports.index =async(req,res)=>{
     const campgrounds =  await Campground.find({})
-    res.render('campgrounds/index',{ campgrounds })
+    res.render('campgrounds/campsPage',{ campgrounds })
   }
 
   //brings to create page
 module.exports.renderNewPage = (req,res) =>{ 
-    res.render('campgrounds/new')
+    res.render('campgrounds/newCampground')
 }
 
 //creates new campground
@@ -35,7 +35,7 @@ module.exports.createNewCampground =async (req,res,next)=>{
 //brings to campground edit page
 module.exports.renderEditCamproundsPage =async(req,res)=>{
   const campground =  await Campground.findById(req.params.id)
-  res.render('campgrounds/edit',{ campground })
+  res.render('campgrounds/editCamp',{ campground })
 }
 
 //edits selected campground
@@ -75,5 +75,5 @@ module.exports.renderCampgroundDetailsPage = async(req,res)=>{
     req.flash('error','Cannot find campground')
     return res.redirect('/campgrounds')
   }
-  res.render('campgrounds/details',{ campground })
+  res.render('campgrounds/detailPage',{ campground })
 }

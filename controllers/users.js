@@ -8,7 +8,7 @@ module.exports.renderRegisterPage = (req,res)=>{
 
 //brings to the login page
 module.exports.renderLoginPage = (req,res)=>{
-    res.render('users/login')
+    res.render('users/loginPage')
 }
 
 //logs in user
@@ -35,10 +35,19 @@ module.exports.registerNewUser = async(req,res)=>{
         }
     }
 
-    // logs a user out
-    module.exports.userLogout = (req,res)=>{
-        req.logout()
+module.exports.userLogout = async(req,res,next)=>{
+    try{
+        req.logout(function (err) {
+            if (err) {
+              return next(err);
+            }
+            req.flash('success_msg', 'Goodbye!');
+            res.redirect('/login');
+          });
         req.flash('success',"Goodbye!") 
         res.redirect('/campgrounds')
+    }catch (error){
+        req.flash('error',error.message);
     }
+}
 

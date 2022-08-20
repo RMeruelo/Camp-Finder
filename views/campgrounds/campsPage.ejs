@@ -1,0 +1,40 @@
+
+<% layout('layouts/boilerplate') %> 
+
+    
+<section class="jumbotron jumbotron-fluid shadow">
+    <div class="container pb-2">
+        <div class="row text-center">
+            <h1>CampFinder</h1>
+        </div>
+    </div>   
+</section>
+
+
+<div class="py-4" id="campsites">
+    <div class=" py-3 container shadow"> 
+        <h1 class=" text-center">Campgrounds<hr></h1>
+        <div class="container overflow-auto" id="scroller">
+            <div class="row">
+                <% for(let campground of campgrounds) {%>
+                        <div class="col-4">
+                            <div class="card shadow mb-3" id="card">
+                                    <img class="card-img-top" src="<%=campground.images[0].url%> " alt="">
+                                    <div class="card-body">
+                                            <h5 class="card-title text-center"> <%=campground.title %> <hr></h5>
+                                            <p class="card-text pb-2"> <%= campground.description%></p>
+                                            <p class="card-text"><small class="text-muted"><%= campground.location%></small></p>
+                                            <hr>
+                                            <a class="btn text-center  btn-primary" href="campgrounds/<%=campground._id%>"><%= campground.title %></a>
+                                    </div>    
+                             </div>    
+                        </div>   
+                <% } %> 
+            </div>
+        </div>
+     </div>
+</div>
+
+
+
+    
