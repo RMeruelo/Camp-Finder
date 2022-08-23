@@ -3,7 +3,7 @@ const User = require('../models/user');
 
 // brings to the register user page
 module.exports.renderRegisterPage = (req,res)=>{
-    res.render('users/register')
+    res.render('users/registerPage')
 }
 
 //brings to the login page
