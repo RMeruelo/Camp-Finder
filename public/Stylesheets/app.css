@@ -46,6 +46,8 @@
 #footer{
     background-color: rgba(0, 0, 0, 0.8);
     font-family: Raleway-Light;
+    position: flex;
+    height: 30px;
 }
 
 /* Campground main page Styling*/
@@ -86,4 +88,13 @@
 
 #card .card-img-top{
     border: 2px solid black;
+}
+
+/*Edit Forms styling*/
+#edit{
+    font-family: Raleway-Bold;
+}
+
+#edit #photos{
+    height: 300px;
 }

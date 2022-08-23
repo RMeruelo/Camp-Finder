@@ -3,9 +3,6 @@
 
         (function () { 
         'use strict'
-
-     
-
         const forms = document.querySelectorAll('.validated-form')
         Array.from(forms)
             .forEach(function (form) {
