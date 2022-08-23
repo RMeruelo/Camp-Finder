@@ -1,3 +1,17 @@
+@font-face {
+    font-family:BerkshireSwash ;
+    src: url(/font/BerkshireSwash-Regular.ttf);
+}
+@font-face {
+    font-family:Raleway-Bold ;
+    src: url(/font/Raleway-Bold.ttf;)
+}
+@font-face {
+    font-family:Raleway-Light ;
+    src: url(/font/Raleway-Light.ttf);
+}
+
+
 
 /* Login Page and SignUp Page*/
 #new{
