@@ -10,6 +10,10 @@
     font-family:Raleway-Light ;
     src: url(/font/Raleway-Light.ttf);
 }
+@font-face {
+    font-family:Raleway-Med ;
+    src: url(/font/Raleway-Medium.ttf);
+}
 
 
 
@@ -65,6 +69,11 @@
 }
 
 /* Campground main page Styling*/
+
+#card-p{
+    text-overflow:ellipsis;
+    font-family: Raleway-Med;
+    }
 .jumbotron{
     display: flex;
     align-items: center;
@@ -109,11 +118,11 @@
 
 /*Edit Forms styling*/
 #edit{
-    font-family: Raleway-Bold;
+    font-family: Raleway-Med;
 }
 
 #edit .card-title{
-    font-family: BerkshireSwash;
+    font-family: Raleway-Bold;
 }
 
 #edit #photos{
@@ -128,5 +137,5 @@
 }
 
 #edit .btn{
-    width: 150px;
+    width: 8vw;
 }
