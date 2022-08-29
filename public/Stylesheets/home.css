@@ -1,14 +1,14 @@
 @font-face {
     font-family:BerkshireSwash ;
-    src: url(/Font/BerkshireSwash-Regular.ttf);
+    src: url(/Fonts/BerkshireSwash-Regular.ttf);
 }
 @font-face {
     font-family:Raleway-Bold ;
-    src: url(/Font/Raleway-Bold.ttf;)
+    src: url(/Fonts/Raleway-Bold.ttf)
 }
 @font-face {
     font-family:Raleway-Light ;
-    src: url(/Font/Raleway-Light.ttf);
+    src: url(/Fonts/Raleway-Light.ttf);
 }
 
 
