@@ -4,11 +4,11 @@
 <section class="container pt-5" id="new">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card shadow pt-5 pb-5">
+            <div class="card shadow pt-5 mb-4 pb-5">
                 <div class="col-md-8 offset-md-2">
                     <img src="https://res.cloudinary.com/darsztkcl/image/upload/v1661367863/CampFinder/photo-1519885277449-12eee5564d68_z9v2cj.jpg" 
                     class="card-img-top border">
-                    <div class="card-body shadow border pt-3 pb-3 mb-4">
+                    <div class="card-body shadow border pt-3 pb-3 ">
                         <h4 class="card-title text-center">Register<hr></h4>
                         <form action="/register" method="post" class="validated-form" novalidate>
                             <div class="mb-3">
@@ -21,7 +21,9 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="password">Password</label>
-                                <input class="form-control" type="password" id="password" name="password" required>  
+                                <input class="form-control" type="password" id="password" name="password" required> 
+                                <input type="checkbox" id="toggle-password"/>
+                                <label for="toggle-password">Show Password</label>
                             </div>
                             <button class="mb-3 btn btn-secondary btn-block shadow">Register</button>
                         </form>
@@ -34,3 +36,4 @@
 
 
 
+<script type="text/javascript" src="/Javascripts/toggleView.js"></script>

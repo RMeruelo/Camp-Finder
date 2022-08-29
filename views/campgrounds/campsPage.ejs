@@ -13,18 +13,18 @@
 
 <div class="container pt-3 mb-2 pb-5" id="campsites">
     <div class="row justify-content-center">
-        <div class="card px-3 pb-5 border shadow">
+        <div class="card  px-3 pb-5 border shadow">
             <h1 class="card-title text-center m-3 pt-3">Campgrounds<hr></h1>
             <div class="card-body">
             <div class="container border pt-5 overflow-auto" id="scroller">
                     <div class="row">
                     <% for(let campground of campgrounds) {%>
-                            <div class="col-4">
+                            <div class="col-4 ">
                                 <div class="card mt-2 border shadow mb-3" id="card">
                                         <img class="card-img-top" src="<%=campground.images[0].url%> ">
                                         <div class="card-body">
                                             <h5 class="card-title text-center"> <%=campground.title %> <hr></h5>
-                                            <div class=" container pb-2" id="card-p">
+                                            <div class=" container pb-2 mb-2 camp-card-body overflow-auto" id="card-p">
                                                 <p class="card-text pb-2"> <%= campground.description%></p>
                                             </div>
                                             <p class="card-text"><small class="text-muted"><%= campground.location%></small></p>

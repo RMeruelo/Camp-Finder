@@ -1,18 +1,18 @@
 @font-face {
     font-family:BerkshireSwash ;
-    src: url(/Font/BerkshireSwash-Regular.ttf);
+    src: url(/Fonts/BerkshireSwash-Regular.ttf);
 }
 @font-face {
     font-family:Raleway-Bold ;
-    src: url(/Font/Raleway-Bold.ttf;)
+    src: url(/Fonts/Raleway-Bold.ttf)
 }
 @font-face {
     font-family:Raleway-Light ;
-    src: url(/Font/Raleway-Light.ttf);
+    src: url(/Fonts/Raleway-Light.ttf);
 }
 @font-face {
     font-family:Raleway-Med ;
-    src: url(/Font/Raleway-Medium.ttf);
+    src: url(/Fonts/Raleway-Medium.ttf);
 }
 
 
@@ -21,7 +21,14 @@
 #new{
     font-family: Raleway-Bold;
 }
-
+#password { 
+    background-image: url(/Icons/invisible.png);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+  }
+#password.visible {
+    background-image: url(/Icons/visible.png);
+  }
 
 /* NavBar Styling */
 
@@ -101,6 +108,11 @@
 #card{
     font-family: Raleway-Bold;
     border: 1px solid black;
+}
+
+
+.camp-card-body{
+    height: 10vh;
 }
 
 #card .text-muted{
