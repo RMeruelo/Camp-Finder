@@ -1,18 +1,18 @@
 @font-face {
     font-family:BerkshireSwash ;
-    src: url(/font/BerkshireSwash-Regular.ttf);
+    src: url(/Font/BerkshireSwash-Regular.ttf);
 }
 @font-face {
     font-family:Raleway-Bold ;
-    src: url(/font/Raleway-Bold.ttf;)
+    src: url(/Font/Raleway-Bold.ttf;)
 }
 @font-face {
     font-family:Raleway-Light ;
-    src: url(/font/Raleway-Light.ttf);
+    src: url(/Font/Raleway-Light.ttf);
 }
 @font-face {
     font-family:Raleway-Med ;
-    src: url(/font/Raleway-Medium.ttf);
+    src: url(/Font/Raleway-Medium.ttf);
 }
 
 
@@ -114,6 +114,9 @@
     object-fit: cover;
 }
 
+
+
+
 /*Edit Forms styling*/
 #edit{
     font-family: Raleway-Med;
@@ -136,4 +139,43 @@
 
 #edit .btn{
     width: 8vw;
+}
+
+
+/* Detail Page styling */
+
+ #details .card-img-top{
+    width: 100%;
+    height: 25vw;
+    object-fit: scale-down;
+}
+
+#details .card{
+    height: 75vh;
+}
+
+#details{
+    font-family: Raleway-Med;
+}
+
+#details .text-muted{
+    font-family: Raleway-Light;
+}
+
+#details .card-title{
+font-family: Raleway-Bold;
+}
+
+
+
+.review-scroll{
+    height: 50vh;
+}
+
+.review{
+    width: 50vh;
+}
+
+.review-create{
+    height: 25vh;
 }
