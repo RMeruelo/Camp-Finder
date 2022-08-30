@@ -1,18 +1,18 @@
 @font-face {
     font-family:BerkshireSwash ;
-    src: url(/Fonts/BerkshireSwash-Regular.ttf);
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/BerkshireSwash-Regular_w27iqe.ttf);
 }
 @font-face {
     font-family:Raleway-Bold ;
-    src: url(/Fonts/Raleway-Bold.ttf)
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/Raleway-Bold_s5xjv2.ttf)
 }
 @font-face {
     font-family:Raleway-Light ;
-    src: url(/Fonts/Raleway-Light.ttf);
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/Raleway-Light_akbnda.ttf);
 }
 @font-face {
     font-family:Raleway-Med ;
-    src: url(/Fonts/Raleway-Medium.ttf);
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868027/CampFinder/Raleway-Medium_jvg5al.ttf);
 }
 
 
@@ -22,12 +22,12 @@
     font-family: Raleway-Bold;
 }
 #password { 
-    background-image: url(/Icons/invisible.png);
+    background-image: url(https://res.cloudinary.com/darsztkcl/image/upload/v1661867908/CampFinder/invisible_loyeof.png);
     background-position: 97% center;
     background-repeat: no-repeat;
   }
 #password.visible {
-    background-image: url(/Icons/visible.png);
+    background-image: url(https://res.cloudinary.com/darsztkcl/image/upload/v1661867908/CampFinder/visible_tdxmbf.png);
   }
 
 /* NavBar Styling */

@@ -1,14 +1,14 @@
 @font-face {
     font-family:BerkshireSwash ;
-    src: url(/Fonts/BerkshireSwash-Regular.ttf);
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/BerkshireSwash-Regular_w27iqe.ttf);
 }
 @font-face {
     font-family:Raleway-Bold ;
-    src: url(/Fonts/Raleway-Bold.ttf)
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/Raleway-Bold_s5xjv2.ttf)
 }
 @font-face {
     font-family:Raleway-Light ;
-    src: url(/Fonts/Raleway-Light.ttf);
+    src: url(https://res.cloudinary.com/darsztkcl/raw/upload/v1661868026/CampFinder/Raleway-Light_akbnda.ttf);
 }
 
 
