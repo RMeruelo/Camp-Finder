@@ -191,3 +191,7 @@ font-family: Raleway-Bold;
 .review-create{
     height: 25vh;
 }
+
+.hidden{
+    display: none;
+}

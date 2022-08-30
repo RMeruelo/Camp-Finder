@@ -51,7 +51,7 @@
                     </div>
             
                          <%# Hides EDIT/DELETE if not author of camp %> 
-                    <%  if(currentUser && campground.author.equals(currentUser._id)){ %>
+                    <%  if(currentUser && campground.author.equals(currentUser._id) ){ %>
                         <div class="card-body" >
                             <a class="card-link btn btn-info" href="/campgrounds/<%= campground. id%>/edit">Edit</a>
                             <form class="d-inline"  action="/campgrounds/<%= campground._id%>?_method=DELETE" method="post">
@@ -106,7 +106,7 @@
 
                             <%# Hides leave a review from owner of camp %> 
                 <% if(currentUser && !campground.author.equals(currentUser._id)){ %>
-                    <div class="container  shadow border mb-3 pt-3">
+                    <div class="container  shadow border mb-3 pt-3" id="leave-review">
                         <div class="card  mb-3 pt-3 shadow border">
                         <h5 class="card-title text-center">Leave a Review</h5>
                         <div class="card-body border">
